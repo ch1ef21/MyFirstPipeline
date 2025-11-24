@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Сборка и тест
+    name: Сборка и тестирование
     runs-on: ubuntu-latest
 
     steps:
