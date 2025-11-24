@@ -18,7 +18,7 @@ jobs:
       - name: Устанавливаем .NET 8
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.x'
+          dotnet-version: 8.x
 
       - name: Восстанавливаем зависимости
         run: dotnet restore
@@ -27,4 +27,4 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Запускаем тесты
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test --no-build --configuration Release --verbosity normal
